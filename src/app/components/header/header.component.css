@@ -1,4 +1,27 @@
 a.navbar-brand {
     font-size: 28px !important;
     margin-left: 28px !important;
+    color: #b86cc7;
 }
+.style-header-nav{
+    background-color: #ecd2bb;
+    padding: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:bold;
+  }
