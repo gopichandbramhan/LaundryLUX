@@ -1,0 +1,141 @@
+.service-section {
+    width: fit-content;
+    /* background: linear-gradient(#7ebcff, rgb(197, 229, 255), #7ebcff); */
+    background-color: black;
+}
+
+.service-section h2 {
+    font-size: 35px;
+    background-color: white;
+    width: fit-content;
+    text-align: center;
+    padding: 10px 20px;
+    animation: colorChange 4s infinite;
+    transition: 0.5s;
+    border: 1px solid silver;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #001730;
+    }
+
+    25% {
+        color: #004793;
+    }
+
+    50% {
+        color: #0075f2;
+    }
+
+    75% {
+        color: #024c9b;
+    }
+
+    100% {
+        color: #001730;
+    }
+}
+
+/* cards */
+.items {
+    margin-bottom: 20px;
+    margin-inline: 10px;
+    padding: 10px 0px;
+    background-color: #001730;
+    color: white;
+    border: 2px solid;
+    border-image: conic-gradient(from 0deg,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            indigo,
+            violet,
+            red) 1;
+}
+
+.items:hover {
+    transition: transform 0.9s;
+    transition-duration: 1s;
+    transform-style: preserve-3d;
+    background-color: #002f62;
+    color: #ffffff;
+}
+
+.service-section h2,
+.items h6 {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    color: #FE4A49;
+    font-size: 45px;
+}
+
+.items h6 {
+    color: #4AD7D1;
+}
+
+.items img {
+    height: 120px;
+    width: 120px;
+    border: 2px solid;
+    border-image: conic-gradient(from 0deg,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            indigo,
+            violet,
+            red) 1;
+    padding: 20px;
+    background-color: white;
+}
+
+.items h6 {
+    font-size: 20px;
+    border-bottom: 1.5px solid;
+    border-image: conic-gradient(from 0deg,
+            red,
+            orange,
+            yellow,
+            rgb(74, 255, 74),
+            rgb(164, 164, 255),
+            rgb(191, 103, 255),
+            violet,
+            rgb(255, 150, 150)) 1;
+}
+
+@media screen and (max-width: 480px) {
+    .service-section h6,
+    .service-section h2 {
+      font-size: 20px;
+    }
+  
+    .service-section h2 {
+      background-color: white;
+      width: fit-content;
+      text-align: center;
+      padding: 10px 20px;
+    }
+  
+    .items {
+      height: 332px;
+      margin-bottom: 10px;
+      width: 78%;
+      padding: 5px 20px;
+      font-size: small;
+    }
+  
+    .service-section img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .items {
+      height: fit-content;
+    }
+  }
