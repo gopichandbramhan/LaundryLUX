@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { Component, ElementRef, HostListener, QueryList, Renderer2, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,16 +6,28 @@ import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  constructor(private el: ElementRef, private renderer: Renderer2) { }
+  @ViewChildren('scrollAnimation') scrollElements!: QueryList<ElementRef>;
 
-  @HostListener('window:scroll', ['$event'])
-  checkScroll() {
-    const elementPos = this.el.nativeElement.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-    if (elementPos < windowHeight) {
-      this.renderer.addClass(this.el.nativeElement, 'animated');
-    } else {
-      this.renderer.removeClass(this.el.nativeElement, 'animated');
-    }
+  ngAfterViewInit() {
+    const options = {
+      root: null, // Use the viewport as the root
+      rootMargin: '0px',
+      threshold: 0.1 // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fadeInDown');
+          entry.target.classList.remove('invisible');
+          observer.unobserve(entry.target); // Stop observing once the animation is triggered
+        }
+      });
+    }, options);
+
+    this.scrollElements.forEach(element => {
+      element.nativeElement.classList.add('invisible');
+      observer.observe(element.nativeElement);
+    });
   }
 }
