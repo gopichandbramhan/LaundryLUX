@@ -1,40 +1,42 @@
 <div class="container-fluid main-container">
     <div class="row d-flex justify-content-evenly align-items-center m-auto">
-        <div class="col-lg-2 col-md-2 col-sm-12 first">
-            <a href="https://www.google.co.in/maps/place/Laundryholic/@21.1184589,79.1117509,17z/data=!4m14!1m7!3m6!1s0x3bd4b90074eed115:0x54bd0e3ede6728cf!2sLaundryholic!8m2!3d21.1184589!4d79.1143258!16s%2Fg%2F11vj_hzsrf!3m5!1s0x3bd4b90074eed115:0x54bd0e3ede6728cf!8m2!3d21.1184589!4d79.1143258!16s%2Fg%2F11vj_hzsrf?entry=ttu"
-                class=""><i class="fa fa-map-marker"></i><span>
-                    India</span></a><br>
-            <i class="fa fa-phone"></i><span>8329904783</span><br>
-            <a href="https://mail.google.com/mail/u/0/#inbox"><i
-                    class="fa fa-envelope"></i></a><span>gopibramhan@gmail.com</span>
+        <div class="col-lg-6 col-md-6 col-sm-12 first m-auto">
+            <h2 class="fw-bold text-center">CONTACT US</h2>
+            <p class="fw-lighter text-dark text-center mt-2">"Need to get in touch with us? Either fill out the form
+                with your inquiry or find the <a href="#">laundryLux@gmail.com</a> you'd like to contact below."</p>
+            <ul>
+                <li> <i class="fas fa-mobile-alt"> </i>+91 8983048428</li>
+                <li><i class="fas fa-map-marker-alt p"></i>
+                    Usquare Laundry Solutions pvt ltd
+                    Second floor, Plot No 141, Dattaray Nagar, Nagpur 440024, Maharashtra
+                </li>
+            </ul>
         </div>
-        <div
-            class="col-lg-8 col-md-8 col-sm-12 second my-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 second my-5">
             <div class="px-4 py-4">
-                <h2 class="fw-bold text-center">Contact Us</h2>
-                <p class="fw-lighter text-dark text-center mt-2">Email us and keep upto date with our latest news</p>
+                <form class="mt-4" #contactForm="ngForm">
+                    <h5>First Name :</h5>
+                    <input class="px-3 py-3" type="text" placeholder="First Name" name="firstName" ngModel required>
 
-                <form   class="mt-4">
+                    <h5>Last Name :</h5>
+                    <input class="px-3 py-3" type="text" placeholder="Last Name" name="lastName" ngModel required>
 
-                    <input class="px-3 py-3" type="text" placeholder="First Name">
+                    <h5>Email :</h5>
+                    <input class="px-3 py-3" type="email" placeholder="Your Email Address" name="email" ngModel
+                        required>
 
-                    <input class="px-3 py-3" type="text" placeholder="Last Name">
-                    
+                    <h5>Mobile Number :</h5>
+                    <input class="px-3 py-3" placeholder="Mobile Number" name="mobileNumber" ngModel>
 
-                    <input class="px-3 py-3" type="email" placeholder=" Your Email Address">
-                   
+                    <h5>What can we help you with? :</h5>
+                    <textarea class="px-3 py-3" placeholder="Text here" name="message" ngModel></textarea>
 
-                    <input class="px-3 py-3" placeholder=" Mobile Number">
-                  
-
-                    <textarea class="px-3 py-3" placeholder=" Text here"></textarea>
-                   
-
-                    <div class=" d-flex justify-content-center align-items-center mt-4">
-                        <button type="submit" class="contact-submit-btn px-5 py-2">Send
+                    <div class="d-flex justify-content-center align-items-center mt-4">
+                        <button type="button" class="contact-submit-btn px-5 py-2" (click)="resetForm(contactForm)">Send
                             Message</button>
                     </div>
                 </form>
+
             </div>
         </div>
     </div>
