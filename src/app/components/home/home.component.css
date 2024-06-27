@@ -104,7 +104,6 @@
 .whoweare{
   margin-top: 80px;
   margin-bottom: 80px;
-  -ms-transform: translate(-50%, -50%);
   color: #170f65;
   overflow: hidden;
 }
@@ -148,8 +147,6 @@
 }
 .laundryProblems img{
   height: 350px;
-  border-radius: 1%;
-  border: 5px solid rgb(221, 252, 255);
   box-shadow: 2px 2px 15px rgb(185, 185, 185);
 }
 .laundryProblems h1{
@@ -157,7 +154,6 @@
   word-spacing: 4px;
 }
 .solutions{
-  margin-top: 5rem;
   background-image: url("/assets/images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -207,7 +203,7 @@
     padding: 0px 20px;
   }
   .whoweare h1{
-    font-size: 40px;
+    font-size: 35px;
   }
   .whoweare p{
     font-size: 18px;
@@ -221,7 +217,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -90px;
+    margin-top: 10px;
   }
   .laundryProblems img{
     margin: auto;
@@ -244,7 +240,8 @@
     padding: 0px 10px;
   }
   .lastsection h1{
-    font-size: 30px;
+      font-size: 30px;
+      margin-top: 59px;
   }
   .lastsection p{
     font-size: 16px;

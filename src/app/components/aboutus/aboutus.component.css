@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    padding: 100px 0px;
     width: 100%;
 }
 .top-banner h1 {
@@ -22,16 +22,17 @@
 .card1 {
     margin: auto;
     width: fit-content;
-    background-color: rgb(21, 21, 21);
-    padding: 40px;
-    color: white;
+    background-color: rgb(244, 244, 244);
+    padding: 30px;
+    color: rgb(0, 0, 0);
+    height: fit-content;
     border: none;
-    border-radius: 10px;
-    box-shadow: 5px 5px 6px gray;
+    box-shadow: 5px 5px 6px rgb(195, 195, 195);
+    margin-bottom: 30px;
 }
 .card1:hover {
     transform: translateY(-10px);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(233, 233, 233, 0.8);
 }
 .card1 i {
     color: #07bb8e;
@@ -42,11 +43,9 @@
 }
 .heading {
     font-size: 55px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .sec-heading {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
 }
 
@@ -134,46 +133,55 @@ h6 .comma {
     }
 
     .sec-heading {
-        font-family: 'Times New Roman', Times, serif;
         font-size: 35px;
     }
     .top-content h1{
         font-size: 45px;
     }
+    .top-banner{
+        padding: 50px 0px;
+    }
     .top-content{
         width: 95%;
-        padding-top: 5px;
+        padding: 0 !important;
+    }
+    .top-content p{
+        padding-bottom: 20px;
+    }
+    .card1{
+        margin: 10px;
     }
 }
-
 @media screen and (min-width:768px)and (max-width:980px) {
     .who-we-are img {
         width: 350px;
         height: 250px;
     }
-
     .who-we-are h6 {
         line-height: 19px;
         font-size: 21px;
         font-weight: lighter;
         color: gray;
     }
-
     .heading {
         font-size: 50px;
         font-family: 'Times New Roman', Times, serif;
     }
-
     .sec-heading {
         font-family: 'Times New Roman', Times, serif;
         font-size: 40px;
     }
-
     .container-main .heading-line {
         font-size: 22px;
         text-align: center;
         padding: 0px;
         line-height: 35px;
         font-family: 'Times New Roman', Times, serif;
+    }
+    .top-content{
+        width: 80%;
+    }
+    .card1{
+        padding: 10px;
     }
 }

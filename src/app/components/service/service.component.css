@@ -1,6 +1,5 @@
 .service-section {
     width: fit-content;
-    /* background-color: #002f62; */
 }
 .service-section h2 {
     font-size: 30px;
@@ -10,7 +9,6 @@
     padding: 10px 20px;
     animation: colorChange 4s infinite;
     transition: 0.5s;
-    border: 1px solid silver;
 }
 @keyframes colorChange {
     0% {
@@ -60,7 +58,6 @@
 }
 .service-section h2,
 .items h6 {
-    font-family: "Prata", serif;
     font-weight: 400;
     color: #FE4A49;
     font-size: 45px;
@@ -98,15 +95,12 @@
             rgb(255, 150, 150)) 1;
 }
 @media screen and (max-width: 480px) {
-    .service-section h6,
     .service-section h2 {
-      font-size: 20px;
-    }
-    .service-section h2 {
+      font-size: 35px;
       background-color: white;
       width: fit-content;
       text-align: center;
-      padding: 10px 20px;
+      margin-top: 30px;
     }  
     .items {
       height: 332px;
@@ -125,6 +119,7 @@
       height: fit-content;
     }
     .service-section h2 {
-        font-size: 25px;
+        margin-top: 20px;
+        font-size: 35px;
     }
   }
