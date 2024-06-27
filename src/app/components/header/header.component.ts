@@ -5,9 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
  
   styleUrls: ['./header.component.css']
-  // styles:['h1{color:red}'],
 })
 export class HeaderComponent {
-  inr: number = 1000; //
+  showButton: boolean = true;
 
+  toggleButtonVisibility() {
+    this.showButton = !this.showButton;
+  }
 }

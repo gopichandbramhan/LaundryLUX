@@ -12,6 +12,13 @@ a.navbar-brand {
     margin: auto;
     font-size: small;
   }
+  .cross{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 30px;
+    margin: auto;
+  }
   nav ul {
     list-style-type: none;
     margin: 0;

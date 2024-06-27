@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-
+  openWhatsApp() {
+    const whatsappUrl = `https://wa.me`;
+    window.open(whatsappUrl, '_blank');
+  }
 }

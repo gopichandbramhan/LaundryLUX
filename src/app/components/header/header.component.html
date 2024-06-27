@@ -1,8 +1,15 @@
 <nav class="navbar navbar-expand-sm navbar-light fixed-top style-header-nav">
     <h1 class="font-weight-bold"><a class="navbar-brand" routerLink="">LaundryLUX</a></h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+
+    <button (click)="toggleButtonVisibility()" *ngIf="showButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <button *ngIf="!showButton" (click)="toggleButtonVisibility()" data-toggle="collapse" data-target="#navbarNav" class="cross">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav  ml-auto">
         <li class="nav-item active">
