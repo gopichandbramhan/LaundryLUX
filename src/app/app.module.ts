@@ -10,6 +10,8 @@ import { ServiceComponent } from './components/service/service.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { ContactusComponent } from './components/contactus/contactus.component';
     ServiceComponent,
     AboutusComponent,
     PagenotfoundComponent,
-    ContactusComponent
+    ContactusComponent,
+    
   ],
   imports: [
     BrowserModule,

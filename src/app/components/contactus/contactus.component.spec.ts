@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContactusComponent } from './contactus.component';
+import { CurrencyPipe } from '@angular/common';
 
 describe('ContactusComponent', () => {
   let component: ContactusComponent;
@@ -8,7 +9,7 @@ describe('ContactusComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ContactusComponent]
+      declarations: [ContactusComponent],
     });
     fixture = TestBed.createComponent(ContactusComponent);
     component = fixture.componentInstance;

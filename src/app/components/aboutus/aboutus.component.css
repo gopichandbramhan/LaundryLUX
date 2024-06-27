@@ -1,17 +1,62 @@
-.heading{
+.top-banner {
+    background-image: url("/assets/images/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+}
+.top-banner h1 {
+    font-size: 60px;
+}
+.top-content {
+    background: rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    margin: auto !important;
+    width: 50%;
+}
+.top-content p{
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+.card1 {
+    margin: auto;
+    width: fit-content;
+    background-color: rgb(21, 21, 21);
+    padding: 40px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px gray;
+}
+.card1:hover {
+    transform: translateY(-10px);
+    background: rgba(0, 0, 0, 0.8);
+}
+.card1 i {
+    color: #07bb8e;
+    font-size: 40px;
+}
+.card1 h6 {
+    color: rgb(255, 174, 34);
+}
+.heading {
     font-size: 55px;
     font-family: 'Times New Roman', Times, serif;
 }
-.sec-heading{
+
+.sec-heading {
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
 }
-.hr-class{
+
+.hr-class {
     width: 80px;
-    color:#001730;
+    color: #001730;
     border: 1px solid #79b2f0;
 }
- .container-main .heading-line {
+
+.container-main .heading-line {
     contain-intrinsic-block-size: auto 100px;
     font-size: 25px;
     text-align: center;
@@ -19,93 +64,117 @@
     font-family: 'Times New Roman', Times, serif;
     
 }
-h6 .comma{
+
+h6 .comma {
     font-size: 40px;
     font-weight: bolder;
 }
-.who-we-are img{
-width: 500px;
+
+.who-we-are img {
+    width: 500px;
 }
-.who-we-are h6{
+
+.who-we-are h6 {
     line-height: 28px;
     font-size: 22px;
     font-weight: 100;
     color: gray;
     text-align: center;
 }
-.commitment .card-title{
+
+.commitment .card-title {
     font-size: 23px;
     font-weight: bolder;
     color: gray;
 }
-.commitment .card:hover{
+
+.commitment .card:hover {
     transition: all 0.5s ease-out;
     top: -15px;
 }
-.card img{
+
+.card img {
     width: 100px;
     height: 100px;
     margin: auto;
 }
 
-.services-container .card-title{
+.services-container .card-title {
     font-size: 15px;
 }
- .services-container .card img{
+
+.services-container .card img {
     width: 70px;
     height: 70px;
- }
- @media screen and (min-width:320px)and (max-width:480px){
-    .who-we-are img{
+}
+
+@media screen and (min-width:320px)and (max-width:480px) {
+    .who-we-are img {
         width: 300px;
-        }
-        .container-main .heading-line {
-            contain-intrinsic-block-size: auto 100px;
-            font-size: 22px;
-            text-align: center;
-            padding: 0px;
-            line-height: 35px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        .heading{
-            font-size: 45px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        .who-we-are h6{
-            line-height: 21px;
-            font-size: 18px;
-            font-weight: lighter;
-            color: gray;
-        }
-        .sec-heading{
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 35px;
-        }
- }
- @media screen and (min-width:768px)and (max-width:980px) {
-    .who-we-are img{
+    }
+
+    .container-main .heading-line {
+        contain-intrinsic-block-size: auto 100px;
+        font-size: 22px;
+        text-align: center;
+        padding: 0px;
+        line-height: 35px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .heading {
+        font-size: 45px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .who-we-are h6 {
+        line-height: 21px;
+        font-size: 18px;
+        font-weight: lighter;
+        color: gray;
+    }
+
+    .sec-heading {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 35px;
+    }
+    .top-content h1{
+        font-size: 45px;
+    }
+    .top-content{
+        width: 95%;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (min-width:768px)and (max-width:980px) {
+    .who-we-are img {
         width: 350px;
         height: 250px;
-        }
-        .who-we-are h6{
-            line-height: 19px;
-            font-size: 21px;
-            font-weight: lighter;
-            color: gray;
-        }
-        .heading{
-            font-size: 50px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        .sec-heading{
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 40px;
-        }
-        .container-main .heading-line {
-            font-size: 22px;
-            text-align: center;
-            padding: 0px;
-            line-height: 35px;
-            font-family: 'Times New Roman', Times, serif;
-        }
- }
+    }
+
+    .who-we-are h6 {
+        line-height: 19px;
+        font-size: 21px;
+        font-weight: lighter;
+        color: gray;
+    }
+
+    .heading {
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .sec-heading {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+    }
+
+    .container-main .heading-line {
+        font-size: 22px;
+        text-align: center;
+        padding: 0px;
+        line-height: 35px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
