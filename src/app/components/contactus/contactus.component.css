@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    background-color: #e3effd;
+}
+
+.main-container h2 {
+    color: #001730;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.first i {
+    margin: 10px;
+    height: 35px;
+    width: 35px;
+    color: #001730;
+    border: 1px solid #001730;
+    padding: 10px 10px;
+    border-radius: 100%;
+}
+
+.first i:hover {
+    color: #001730;
+    border: 1.5px solid #009675;
+}
+
+.first span,
+.first a {
+    text-decoration: none;
+    color: rgb(63, 55, 55);
+}
+
+
+
+.first {
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    color: black;
+    margin-right: 30px;
+}
+
+.first ul li {
+    list-style: none;
+}
+
+.first p a {
+    color: #001730;
+    font-weight: bold;
+}
+
+.first h2 {
+    font-size: 50px;
+}
+
+.second {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #daebfc;
+}
+
+.second h5 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.second input,
+.second textarea {
+    width: 100%;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(250, 253, 255);
+}
+
+.contact-submit-btn {
+    background-color: #001730;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 468px) {
+    .first h2 {
+        font-size: 40px;
+        margin-top: 25px;
+    }
+
+    .first {
+        padding: 0px;
+        border-radius: 10px;
+        color: black;
+    }
+
+    .first ul li {
+        display: none;
+    }
+}

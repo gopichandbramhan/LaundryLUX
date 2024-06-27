@@ -1,7 +1,6 @@
-
 .footer-container{
     background-color: #001730;
-    color:white; 
+    color:white !important;
     padding: 20px; 
 }
 .footer-main-content h1{
@@ -27,13 +26,18 @@
     line-height: 32px;
     font-size: 14px;
 }
+.services ul li a{
+    color: white;
+    
+}
 .services ul li i{
     margin-right: 5px;
 }
-.services ul a:hover{
+.services ul li a:hover{
     font-weight: 600;
     font-size: 14px;
     color:#4AD7D1;
+    text-decoration: none;
 
 }
 .social-btn{

@@ -1,1 +1,43 @@
-<p>contactus works!</p>
+<div class="container-fluid main-container">
+    <div class="row d-flex justify-content-evenly align-items-center m-auto">
+        <div class="col-lg-6 col-md-6 col-sm-12 first m-auto">
+            <h2 class="fw-bold text-center">CONTACT US</h2>
+            <p class="fw-lighter text-dark text-center mt-2">"Need to get in touch with us? Either fill out the form
+                with your inquiry or find the <a href="#">laundryLux@gmail.com</a> you'd like to contact below."</p>
+            <ul>
+                <li> <i class="fas fa-mobile-alt"> </i>+91 8983048428</li>
+                <li><i class="fas fa-map-marker-alt p"></i>
+                    Usquare Laundry Solutions pvt ltd
+                    Second floor, Plot No 141, Dattaray Nagar, Nagpur 440024, Maharashtra
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 second my-5">
+            <div class="px-4 py-4">
+                <form class="mt-4" #contactForm="ngForm">
+                    <h5>First Name :</h5>
+                    <input class="px-3 py-3" type="text" placeholder="First Name" name="firstName" ngModel required>
+
+                    <h5>Last Name :</h5>
+                    <input class="px-3 py-3" type="text" placeholder="Last Name" name="lastName" ngModel required>
+
+                    <h5>Email :</h5>
+                    <input class="px-3 py-3" type="email" placeholder="Your Email Address" name="email" ngModel
+                        required>
+
+                    <h5>Mobile Number :</h5>
+                    <input class="px-3 py-3" placeholder="Mobile Number" name="mobileNumber" ngModel>
+
+                    <h5>What can we help you with? :</h5>
+                    <textarea class="px-3 py-3" placeholder="Text here" name="message" ngModel></textarea>
+
+                    <div class="d-flex justify-content-center align-items-center mt-4">
+                        <button type="button" class="contact-submit-btn px-5 py-2" (click)="resetForm(contactForm)">Send
+                            Message</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
