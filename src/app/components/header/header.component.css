@@ -5,8 +5,10 @@ a.navbar-brand {
 }
 .style-header-nav{
     background-color: #001730;
-  
-    padding: 10px;
+   padding: 10px;
+  }
+  .navbar-toggler{
+    background-color: white;
   }
   nav ul {
     list-style-type: none;
