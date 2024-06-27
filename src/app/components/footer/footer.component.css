@@ -76,7 +76,9 @@
        font-size: 15px;
        letter-spacing: 3px;
        margin-right: 6px;
-        
+    }
+    .footer-main-content h1, .footer-main-content p{
+        text-align: center;
     }
     .social-btn{
         background-color: #052547;
