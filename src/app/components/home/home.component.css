@@ -6,7 +6,9 @@
   background-position: center;
   background-size: cover;
 }
-
+.container{
+  overflow: hidden;
+}
 .carousel-item {
   animation: rotateInRight 1s ease-in-out;
 }
