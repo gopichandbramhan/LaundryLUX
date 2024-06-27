@@ -9,6 +9,5 @@ export class ContactusComponent {
   resetForm(form: any) {
     Swal.fire( '!', 'Submitted Successfully');
     form.resetForm();
-   
   }
 }
