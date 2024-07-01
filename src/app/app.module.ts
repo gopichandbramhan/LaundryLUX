@@ -10,6 +10,7 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { FormsModule } from '@angular/forms';
+import { FranchiseComponent } from './components/franchise/franchise.component';
 
 
 
@@ -23,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     AboutusComponent,
     PagenotfoundComponent,
     ContactusComponent,
+    FranchiseComponent,
     
   ],
   imports: [
